@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:padding="16dp"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/nav_header_img">
+    <!--line 9:  android:background="@color/li_indigo"" -->
+    <!--line 7: gravity = elements placed at bottom of this header(line 12 imgview)-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/nav_circle"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/nav_header_img"/>
+        <!--line 16: scale center crop = zoom in center & crop from borders part-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_ancientgames_mail"
+        android:textColor="@color/white"
+        android:paddingTop="4dp"/>
+
+</LinearLayout>

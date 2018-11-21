@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/schedule_id"
+            android:icon="@drawable/schedule"
+            android:title="@string/schedule" />
+        <item
+            android:title="@string/points"
+            android:id="@+id/points_id"
+            android:icon="@drawable/points"/>
+        <item
+            android:title="@string/history"
+            android:id="@+id/history_id"
+            android:icon="@drawable/history"/>
+        <item
+            android:title="@string/rules"
+            android:id="@+id/rules_id"
+            android:icon="@drawable/rulesandtactics"/>
+    </group>
+
+    <!--Subheader About Us-->
+    <item android:title="@string/about_us">
+        <menu>
+            <item
+                android:id="@+id/players_id"
+                android:icon="@drawable/players"
+                android:title="@string/players" />
+            <item
+                android:id="@+id/about_id"
+                android:icon="@drawable/about"
+                android:title="@string/about"/>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

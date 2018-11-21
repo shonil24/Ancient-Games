@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--relative bcoz nav to be placed under toolbar-->
+
+    <include layout="@layout/toolbar_layout"/> <!--step 15 a separate toolbar file-->
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:fitsSystemWindows="false"
+    tools:openDrawer="start">
+    <!-- line 16  :Fit system = takes layout similar to activity-->
+    <!-- line 17  :open drawer = main line to which nav gets added to view (last step)-->
+    <!-- line 15  :pasted or reverted back margintop as new toolbar file got created(step 16)-->
+    <!-- line 16  :fit change to false as nv under toolbar(step 17)-->
+    <include layout="@layout/activity_main"/> <!--main activity runs from here-->
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu">
+        <!--line 24 :Navigation view from design library-->
+        <!--line 28 :gravity = nav view will be at left side of activity/screen-->
+        <!--line 30,31 : adding header & menu of nav drawer to nav view-->
+        <!--line 29: fit system value change form true to false (step 13.1)-->
+        <!-- line 28 :margin top added to shrink nav under toolbar(step 13)
+             margin top previously added here at line 28 got removed and pasted above (step 16)-->
+    </android.support.design.widget.NavigationView>
+
+<!--make this as default activity which will launch 1st..i.e nav drawer-->
+</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
+    <!--Main Nav Drawer File
+        Main Step line 9-14 activity_main.xml (Adding toolbar)
+        step 1 :    Above 2-8,13,15-20
+        step 2 :    mainactivity line 23(nav drawer)
+        step 3 :    making nav_header file.xml
+        step 4 :    create res->menu->nav_menu file.xml and coding
+                    {Adding drawable icons}
+        step 5 :    line 22,23
+        step 6 :    line 9
+        step 7 :    main activity.java
+                    drawer layout,nav view,toolbar,toggle,on nav item listener
+        step 8 :    circle image view library .Check build.gradle(module:app)
+        step 9 :    nav_header.xml chnage img view to circle img view
+        step 10:    styles.xml line 11 new style added,manifest file set activity
+                    theme to no action bar(main acitivity)  (Optional)
+        step 11:    step 10 removed here i.e transparency added in step 10 got removed to add nav under toolbar
+                    goto manifest and check 1 line removed of transparency
+        step 12:    added relative layout here [For placing nav under toolbar]
+        step 13:    added margin top so nav gets shrink below toolbar or under
+            13.1:   line 27: fitsystemwindow true to false
+                    1st main activity layout included then comes nav view and then fit size=false
+                    this makes background black while nav on (even toolbar)
+        step 14:    create new toolbar.xml layout so toolbar will not have background black effect
+                    copy code main acivity.xml paste in toolbar_layout
+        step 15:    include toolbar layout here
+        step 16:    revert actionbarsize
+        step 17:    line 16,21 fitsystem change to false as nav under toolbar-->

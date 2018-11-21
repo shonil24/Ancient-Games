@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Ancient Games</string>
+    <string name="splash_logo">splash_logo</string>
+    <string name="home">home</string>
+    <string name="nav_header_img">nav header img</string>
+    <string name="app_ancientgames_mail">app.ancientgames@gmail.com</string>
+    <string name="schedule">schedule</string>
+    <string name="points">points</string>
+    <string name="history">history</string>
+    <string name="rules">rules</string>
+    <string name="about_us">about us</string>
+    <string name="players">players</string>
+    <string name="about">about</string>
+    <string name="settings">settings</string>
+    <string name="logout">logout</string>
+    <string name="open_drawer">open navigation drawer</string>
+    <string name="close_drawer">close navigation drawer</string>
+    <!-- Strings related to login -->
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="signup_link">Not a member yet? Sign up now</string>
+    <string name="email_id">Email Id</string>
+    <string name="team_name">Team name</string>
+    <string name="point">point</string>
+    <string name="search">Search...</string>
+    <string name="search_players">Search Players...</string>
+    <string name="name_here">name here</string>
+    <string name="dob_here">DOB here</string>
+    <string name="age_here">Age here</string>
+    <string name="rank_here">Rank here</string>
+
+</resources>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+  <!--  <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:padding="2dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="1dp"/>  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_here"
+            android:textColor="#212121"
+            android:textSize="15sp"/>
+
+     <!--   <TextView
+            android:id="@+id/DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dob_here"/> -->
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/age_here"/>
+
+        <TextView
+            android:id="@+id/Rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rank_here"/>
+
+    </LinearLayout>
+
+</LinearLayout>

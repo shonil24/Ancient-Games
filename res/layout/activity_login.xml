@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:background="@color/li_indigo">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/splashiconlogo"
+                android:layout_gravity="center"/>
+
+             <TextView
+                 android:id="@+id/Logoname"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/app_name"
+                 android:layout_marginTop="8dp"
+                 android:textColor="@color/white"
+                 android:textSize="22sp"
+                 android:textStyle="bold"
+                 android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Email_id"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint="@string/email_id"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_btn"
+        android:elevation="10dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:targetApi="lollipop"
+        android:onClick="LoginButtonclicked"/>
+    <!--Android background used a separate drawable only .xml file for rounded borders/corners-->
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="@string/signup_link"
+        android:textColor="#858484"
+        android:onClick="SignupButtonClicked"/>
+
+</LinearLayout>
